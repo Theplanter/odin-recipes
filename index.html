@@ -1,23 +1,42 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <h1>Odin Recipes</h1>
-    
+    <header>
+        <h1>Odin Recipes</h1>
+    </header>
+    <P id="intro">Click any of the phots to look at their recipes</P>
+
     <!--the anchors have imgs attached as clickable links
     and short descriptions-->
-    <a href="recipes/bread.html"><img src="pictures/bread.jpeg" alt="italian bread"></a>
-    <P>bread recipe</P>
+    <div class="container">
+        
+        <div class="item">
+            <P>Breads Recipe</P>
+            <a href="recipes/bread.html"><img src="pictures/bread.jpeg" class="bread" alt="italian bread"></a>
+        </div>
 
-    <a href="recipes/chicken-alfredo.html"><img  src="pictures/alfredo.jpeg" alt="pan of chicken alfredo"></a>
-    <P>pasta recipe</P>
+        <div class="item">
+            <P>Chicken Pasta Recipe</P>
+            <a href="recipes/chicken-alfredo.html"><img src="pictures/alfredo.jpeg" class="chicken"
+                    alt="pan of chicken alfredo"></a>
+        </div>
 
-    <a href="recipes/potato-soup.html"><img src="pictures/soup.jpeg" alt="blended bowl of potato soup"></a>
-    <P>potato soup recipe</P>
+        <div class="item">
+            <P>Potato Soup Recipe</P>
+            <a href="recipes/potato-soup.html"><img src="pictures/soup3.jpeg" class="soup"
+                    alt="blended bowl of potato soup"></a>
+        </div>
+    </div>
 
 </body>
+
 </html>

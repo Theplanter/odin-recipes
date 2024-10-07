@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+
+    background-color: rgb(138, 138, 109);
+}
+
+h1 {
+    text-align: center;
+    border: 2px solid rgb(100, 99, 99);
+    background-color: rgb(114, 114, 93);
+}
+
+p {
+    text-align: center;
+}
+
+#intro {
+    margin-top: 20px;
+}
+
+img {
+    width: 340px;
+    height: auto;
+
+}
+
+/* for positioning your items they go in the container
+to change the size or the individual position put it in the item*/
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    width: auto;
+
+}
+
+.item {
+    max-width: 450px;
+    margin-top: 3%;
+
+   
+}
+
+.container .item p {
+    background-color: rgb(114, 114, 93);
+
+}
+
+main {
+    text-align: center;
+}
+
+.ingreds, .direction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    text-align: left;
+}
+ol{
+    text-align: left;
+}
+
+li {
+    margin-top: 20px;
+}
+
+header {}
