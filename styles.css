@@ -14,6 +14,7 @@ h1 {
     text-align: center;
     border: 2px solid rgb(100, 99, 99);
     background-color: rgb(114, 114, 93);
+    padding: 10px;
 }
 
 p {
@@ -27,7 +28,7 @@ p {
 img {
     width: 340px;
     height: auto;
-
+    border-radius: 20% 0px;
 }
 
 /* for positioning your items they go in the container
@@ -46,7 +47,25 @@ to change the size or the individual position put it in the item*/
     max-width: 450px;
     margin-top: 3%;
 
-   
+}
+
+.container .item img,
+.container .item p {
+    box-shadow: 6px 2px 3px aliceblue;
+    transition: all .8s ease-out;
+
+}
+
+.container .item:hover img {
+    box-shadow: 6px 2px 7px rgb(0, 0, 0);
+    width: 400px;
+}
+
+.container .item:hover p {
+    font-size: 20px;
+    box-shadow: 6px 2px 7px rgb(0, 0, 0);
+
+
 }
 
 .container .item p {
@@ -58,22 +77,55 @@ main {
     text-align: center;
 }
 
-.ingreds, .direction {
+.ingreds,
+.direction {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-ul {
+ul,
+ol {
     text-align: left;
 }
-ol{
-    text-align: left;
-}
+
 
 li {
     margin-top: 20px;
 }
 
-header {}
+nav {
+    position: absolute;
+    display: flex;
+    gap: 25px;
+    padding: 10px 15px;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 21px;
+    color: cornsilk;
+    transition: all .5s;
+}
+
+nav a:hover {
+
+    background-color: #00000075;
+    border-radius: 25px;
+    padding: 5px;
+
+}
+
+legend {
+    margin: 22px 203px;
+    padding: 2px 7px;
+}
+
+.direction {
+    max-width: 535px;
+    padding: 0 136px;
+}
+fieldset{
+    border: 2px solid #dbc9a9c0;
+}
